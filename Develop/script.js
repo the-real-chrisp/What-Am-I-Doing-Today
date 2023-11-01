@@ -2,11 +2,26 @@
 $(function () {
   const currentDate = dayjs();
   const formattedCurrentDate = currentDate.format('MM-DD-YYYY HH:mm:ss');
-  console.log(formattedCurrentDate);
-
   const currentDayEl = $('#currentDay')
 
+  //appends current date and time to webpage
   $(currentDayEl).append(formattedCurrentDate);
+
+  //function to color time blocks based on time of day
+  function colorTimeBlock() {
+    const currentTime = dayjs().hour();
+    const hourEl = [
+      $("#hour-9"),
+      $("#hour-10")
+    ]
+    console.log(hourEl);
+    console.log(currentTime);
+  }
+
+  colorTimeBlock();
+
+  const test = document.getElementById('hourBlock')
+  console.log(test.dataset.number);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
