@@ -26,12 +26,14 @@ $(function () {
     }
   });
 
+  //jQuery documentation "At present, using .val() on <textarea> elements strips carriage return characters from the browser-reported value."
   $.valHooks.textarea = {
     get: function (elem) {
       return elem.value.replace(/\r?\n/g, "\r\n");
     }
   };
 
+  //Saves user input to local storage
   $('.saveBtn').on('click', function (event) {
     const userInput9 = $('#textArea9').val();
     const userInput10 = $('#textArea10').val();
@@ -53,6 +55,7 @@ $(function () {
     localStorage.setItem('user-input-17', userInput17);
   });
 
+  //Appends localStorage to window
   $(document).ready(function() {
     const textArea9 = $('#textArea9')
     const textArea10 = $('#textArea10')
