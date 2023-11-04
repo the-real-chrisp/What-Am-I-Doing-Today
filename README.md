@@ -12,7 +12,7 @@ There are no installtion requirements. Users can run on their native browser and
 
 Usage for this web application is simple! Navigate to the webpage. User will see the date and time located at the top of the webpage title. Based on the current time, the time blocks will either be grey (time is in the past), red (time is current), or green (time is in the future). Start by entering text in your desired time block and then click the blue save button. If you wish to delete something, delete the desired text from the time block and then click the blue save button. If you refresh the page, the user text will be persistent and refresh into the appropriate time block. 
 
-    ![Screenshot](https://raw.githubusercontent.com/the-real-chrisp/What-Am-I-Doing-Today/main/Assets/Work-Day-Planner-Screenshot.png)
+    [Screenshot](Assets/Work-Day-Planner-Screenshot.png)
 
 ## Credits
 
